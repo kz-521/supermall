@@ -11,7 +11,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest  # 使用最新版本的 Ubuntu 进行构建
-
+    permissions:  # 新增权限配置
+      contents: write  # 允许写入仓库
     steps:
       # 检出代码
       - name: Checkout code

@@ -23,6 +23,10 @@ jobs:
         with:
           node-version: '20'  # 使用 Node.js 20 版本
 
+        # 安装 pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm  # 使用 npm 安装 pnpm
+
       # 安装依赖
       - name: Install dependencies
         run: pnpm install  # 或 yarn install

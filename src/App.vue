@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    111111122222
+    111111122222333
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>

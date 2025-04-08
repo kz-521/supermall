@@ -3,10 +3,10 @@ name: Frontend CI/CD
 on:
   push:
     branches:
-      - master  # 监听 main 分支的 push 事件
+      - master  # 监听 master 分支的 push 事件
   pull_request:
     branches:
-      - master  # 监听向 main 分支的 PR 提交
+      - master  # 监听向 master 分支的 PR 提交
 
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # 使用 Node.js 20 版本
+          node-version: '20'  # 使用 Node.js 20 版本
 
       # 安装依赖
       - name: Install dependencies

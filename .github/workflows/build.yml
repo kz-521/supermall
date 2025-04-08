@@ -40,6 +40,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # 部署到 gh-pages 分支
+          branch: new-pages  # 部署到 gh-pages 分支
           folder: dist      # 构建输出目录（Vue 默认是 dist，React 默认是 build）
           token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 自动生成的 token
